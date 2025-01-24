@@ -2,6 +2,8 @@
 
 A modern, feature-rich task management application enhanced with AI capabilities for smart task organization. Built with PHP, SQLite, and Bootstrap, featuring a responsive design with dark/light theme support.
 
+# Demo: https://raxana.net/todolistai
+
 ## 🌟 Features
 
 ### User Management
