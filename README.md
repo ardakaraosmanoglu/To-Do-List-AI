@@ -64,7 +64,7 @@ A modern, feature-rich task management application enhanced with AI capabilities
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/todo-list-ai.git
+   git clone https://github.com/ardakaraosmanoglu/todo-list-ai.git
    ```
 
 2. Configure your web server:
@@ -151,9 +151,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Contact
 
-Your Name - [@yourusername](https://twitter.com/yourusername)
+Your Name - [@raxanayzilim](https://raxana.net)
 
-Project Link: [https://github.com/yourusername/todo-list-ai](https://github.com/yourusername/todo-list-ai)
+Project Link: [https://github.com/yourusername/todo-list-ai](https://github.com/ardakaraosmanoglu/todo-list-ai)
 
 ---
 Made with ❤️ using PHP, SQLite, and AI 
