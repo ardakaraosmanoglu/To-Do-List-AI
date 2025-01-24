@@ -153,7 +153,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Contact
 
-Your Name - [@raxanayzilim](https://raxana.net)
+Your Name - [@raxanayazilim](https://raxana.net)
 
 Project Link: [https://github.com/yourusername/todo-list-ai](https://github.com/ardakaraosmanoglu/todo-list-ai)
 
