@@ -1,4 +1,4 @@
-# Task Management Application
+# To Do List with AI
 
 A modern, feature-rich task management web application built with PHP, JavaScript, and MySQL.
 
