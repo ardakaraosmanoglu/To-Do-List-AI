@@ -1,161 +1,103 @@
-# AI-Powered ToDo List Application
+# Task Management Application
 
-A modern, feature-rich task management application enhanced with AI capabilities for smart task organization. Built with PHP, SQLite, and Bootstrap, featuring a responsive design with dark/light theme support.
+A modern, feature-rich task management web application built with PHP, JavaScript, and MySQL.
 
-# Demo: https://raxana.net/todolistai
+## Features
 
-## 🌟 Features
+- **User Authentication**
+  - Secure registration and login system
+  - User profile management
+  - Session handling and security
 
-### User Management
-- 🔐 Secure authentication system with password hashing
-- 👤 User registration with email verification
-- 🔄 Profile management (update username, email, password)
-- 🚪 Session-based authentication with secure cookie handling
+- **Task Management**
+  - Create, update, and delete tasks
+  - Add subtasks to break down complex tasks
+  - Track task progress
+  - Set task priorities
+  - Filter and view tasks by different criteria
 
-### Task Management
-- ✨ AI-powered task optimization
-  - Smart title refinement
-  - Automatic description generation
-  - Context-aware task suggestions
-- ✅ Create, read, update, and delete tasks
-- 🏷️ Priority levels (High, Medium, Low)
-- 📋 Task status tracking (Active/Completed)
-- 🔍 Advanced task filtering and search
-- 📱 Responsive design for all devices
+- **User Interface**
+  - Clean and intuitive interface
+  - Dark/Light theme toggle
+  - Responsive design for all devices
+  - Real-time updates
+  - Error handling and user feedback
 
-### UI/UX Features
-- 🌓 Dark/Light theme toggle
-- 💫 Modern, clean interface
-- 🎨 Bootstrap 5 components
-- 📱 Mobile-first responsive design
-- ⚡ Real-time updates
-- 🔔 User-friendly notifications
+- **Task Features**
+  - Priority levels with color coding
+  - Progress tracking for tasks with subtasks
+  - Date formatting and management
+  - Task suggestions
+  - HTML escape functionality for security
 
-### Security Features
-- 🔒 CSRF protection
-- 🛡️ SQL injection prevention
-- 🔐 XSS protection
-- 🚫 Session hijacking prevention
-- 📝 Input validation and sanitization
+## Project Structure
 
-## 🚀 Technologies Used
-
-- **Frontend**:
-  - HTML5, CSS3, JavaScript
-  - Bootstrap 5
-  - Custom responsive design
-  - Dark/Light theme support
-
-- **Backend**:
-  - PHP 7.4+
-  - SQLite3 database
-  - RESTful API architecture
-
-- **AI Integration**:
-  - Google Gemini API for task optimization
-  - Natural language processing for task enhancement
-
-## 📋 Requirements
-
-- PHP 7.4 or higher
-- SQLite3
-- Modern web browser with JavaScript enabled
-- Apache/Nginx web server
-
-## 🛠️ Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/ardakaraosmanoglu/todo-list-ai.git
-   ```
-
-2. Configure your web server:
-   - Point document root to the `todolist` directory
-   - Ensure PHP has write permissions for the `database` directory
-
-3. Set up the database:
-   ```bash
-   # The database will be automatically initialized on first run
-   # Make sure the database directory is writable
-   chmod 755 database
-   ```
-
-4. Configure the application:
-   - Copy `config.example.php` to `config.php`
-   - Update the configuration values as needed
-   - Add your Gemini API key for AI features
-
-5. Access the application:
-   - Visit `http://localhost/todo-list-ai`
-   - Register a new account
-   - Start managing your tasks!
-
-## 🔧 Configuration
-
-Key configuration options in `config.php`:
-```php
-// Database Configuration
-define('DB_PATH', 'database/todo.db');
-
-// Security Settings
-define('CSRF_TOKEN_SECRET', 'your-secret-key');
-define('SESSION_LIFETIME', 3600);
-
-// API Configuration
-define('GEMINI_API_KEY', 'your-api-key');
+```
+├── css/
+│   ├── dark-mode.css       # Dark theme styling
+│   └── style.css          # Main application styles
+├── js/
+│   ├── auth.js            # Authentication functions
+│   ├── main.js            # Core functionality
+│   └── tasks.js           # Task management functions
+├── php/
+│   ├── auth.php           # Authentication backend
+│   ├── config.php         # Application configuration
+│   ├── db.php            # Database connection
+│   ├── get_task_suggestions.php
+│   ├── login.php         # Login handling
+│   ├── register.php      # Registration handling
+│   └── tasks.php         # Task management backend
+├── about.php             # About page
+├── index.php            # Main application page
+├── login.php           # Login page
+├── profile.php         # User profile page
+└── register.php        # Registration page
 ```
 
-## 📱 Usage
+## Technical Details
 
-1. **User Registration/Login**:
-   - Register with email and password
-   - Login with credentials
-   - Update profile information as needed
+### Frontend
+- JavaScript-based task management
+- Real-time UI updates
+- Theme switching functionality
+- Filter system for tasks
+- Error handling and display
 
-2. **Task Management**:
-   - Create new tasks with title and description
-   - Optionally use AI to optimize task content
-   - Set priority levels
-   - Mark tasks as complete
-   - Filter and search tasks
+### Backend
+- PHP-based REST API
+- MySQL database integration
+- User authentication system
+- Task suggestion system
+- Secure data handling
 
-3. **Theme Customization**:
-   - Toggle between dark and light themes
-   - Theme preference is saved automatically
+## Getting Started
 
-## 🔒 Security
+1. Configure your web server with PHP and MySQL support
+2. Set up the database using the provided schema
+3. Update `php/config.php` with your database credentials
+4. Deploy the application files to your web server
+5. Access the application through your web browser
 
-- Implements CSRF protection for all forms
-- Uses prepared statements for database queries
-- Sanitizes user input
-- Secures session management
-- Implements proper password hashing
-- Protects against XSS attacks
+## Security Features
 
-## 🤝 Contributing
+- Password hashing
+- Session management
+- HTML escaping for user input
+- Secure database queries
+- Input validation
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+## Requirements
 
-## 📄 License
+- PHP 7.4+
+- MySQL 5.7+
+- Modern web browser with JavaScript enabled
+- Web server (Apache/Nginx recommended)
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+## Contributing
 
-## 🙏 Acknowledgments
+Feel free to submit issues and enhancement requests.
 
-- Bootstrap for the UI framework
-- Google Gemini for AI capabilities
-- SQLite for the database
-- PHP community for inspiration and support
+## License
 
-## 📞 Contact
-
-Your Name - [@raxanayazilim](https://raxana.net)
-
-Project Link: [https://github.com/yourusername/todo-list-ai](https://github.com/ardakaraosmanoglu/todo-list-ai)
-
----
-Made with ❤️ using PHP, SQLite, and AI 
+[Add your license information here]
