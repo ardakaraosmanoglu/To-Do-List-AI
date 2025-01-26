@@ -66,9 +66,8 @@ A modern, feature-rich task management web application built with PHP, JavaScrip
 
 ### Backend
 - PHP-based REST API
-- MySQL database integration
+- LiteSQL database integration
 - User authentication system
-- Task suggestion system
 - Secure data handling
 
 ## Getting Started
@@ -90,7 +89,7 @@ A modern, feature-rich task management web application built with PHP, JavaScrip
 ## Requirements
 
 - PHP 7.4+
-- MySQL 5.7+
+- LiteSQL
 - Modern web browser with JavaScript enabled
 - Web server (Apache/Nginx recommended)
 
